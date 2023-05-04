@@ -34,7 +34,9 @@ const database = firebase.database();
     return {
       statusCode: 200,
       headers:{
-      'Access-Control-Allow-Origin': '*'
+      'Access-Control-Allow-Origin': '*',
+        'Access-Control-Allow-Headers': 'Content-Type',
+        'Access-Control-Allow-Methods': 'POST'
       },
       body: JSON.stringify({ message: 'SUCCESS' })
     };
@@ -43,7 +45,9 @@ const database = firebase.database();
     return {
       statusCode: 500,
       headers:{
-      'Access-Control-Allow-Origin': '*'
+      'Access-Control-Allow-Origin': '*',
+        'Access-Control-Allow-Headers': 'Content-Type',
+        'Access-Control-Allow-Methods': 'POST'
       },
       body: JSON.stringify({ message: 'FAILED', error })
     };
