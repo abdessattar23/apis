@@ -1,5 +1,5 @@
-const firebase = require('firebase/app');
-require('firebase/database');
+const firebase = require('firebase');
+//require('firebase/database');
 const axios = require("axios");
 const cors = require('cors')({ origin: true });
 
