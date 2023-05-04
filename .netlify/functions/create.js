@@ -2,8 +2,6 @@ import { initializeApp } from "firebase/app";
 
 import { database, ref, set, child } from "firebase/database";
 
-const axios = require("axios");
-
 
 exports.handler = async (event, context) => {
   try {
