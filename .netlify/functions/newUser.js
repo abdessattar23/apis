@@ -5,6 +5,7 @@ require('firebase/database');
 firebase.initializeApp({
   apiKey: "AIzaSyDDq_cXa6AbPBpsD1Q_d-89Yd7KPTj4kQg",
   authDomain: "api--s.firebaseapp.com",
+  databaseURL: "https://api--s-default-rtdb.firebaseio.com",
   projectId: "api--s",
   storageBucket: "api--s.appspot.com",
   messagingSenderId: "242984774494",
