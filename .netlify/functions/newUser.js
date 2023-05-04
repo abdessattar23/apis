@@ -4,7 +4,7 @@ exports.handler = async (event, context) => {
 
   try {
  
-cont firebase = {
+const firebase = {
   apiKey: "AIzaSyDDq_cXa6AbPBpsD1Q_d-89Yd7KPTj4kQg",
   authDomain: "api--s.firebaseapp.com",
   databaseURL: "https://api--s-default-rtdb.firebaseio.com",
