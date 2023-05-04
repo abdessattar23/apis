@@ -1,0 +1,16 @@
+{
+  "name": "apis",
+  "version": "1.0.0",
+  "description": "Bench of APIs",
+  "dependencies": {
+    "firebase": "^9.6.1",
+    "node": "^16.0.0",
+    "axios": "^0.24.0" 
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Your Name",
+  "license": "MIT"
+}
