@@ -1,11 +1,13 @@
 const firebase = require('firebase/app');
 require('firebase/database');
 const axios = require("axios");
+const cors = require('cors')({ origin: true });
 
 // Get a reference to the database
 const database = firebase.database();
 
 exports.handler = async (event, context) => {
+  cors(event, context, () => {});
   try {
     const config = await axios.get("https://api-s.netlify.app/.netlify/functions/newUser");
     firebase.initializeApp(config);
