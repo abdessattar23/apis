@@ -12,7 +12,7 @@ firebase.initializeApp({
   measurementId: "G-HPT5J45N07"
 });
 
-exports.newUser = async (event, context) => {
+exports.handler = async (event, context) => {
   const { username, fullname, age, password } = event.queryStringParameters;
 
   try {
