@@ -18,11 +18,11 @@ exports.handler = async (event, context) => {
 
   try {
     // Create the main folder with the given name
-    await firebase.database().ref(username).set('');
+    const reff = await firebase.database().ref(username).set('');
 
     // Create the 'info' subfolder and upload the data
     const infoRef = firebase.database().ref(`${username}/info`);
-    await infoRef.set({ username, fullname, age, password });
+    const fff = await infoRef.set({ username, fullname, age, password });
 
     // Return success message
     return {
@@ -33,7 +33,7 @@ exports.handler = async (event, context) => {
     // Return error message
     return {
       statusCode: 500,
-      body: JSON.stringify({ message: 'FAILED', error })
+      body: JSON.stringify({ error })
     };
   }
 };
